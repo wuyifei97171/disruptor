@@ -2,7 +2,7 @@ package disruptor.quickstart;
 
 public class OrderEvent {
 
-    private long value;
+    private long value;     // 订单的价格
 
     public long getValue() {
         return value;
