@@ -12,7 +12,7 @@ public class OrderEventProducer {
         this.ringBuffer = ringBuffer;
     }
 
-    // 投递数据的方法
+    // 投递数据的方法1
     public void sendData(ByteBuffer data){
         // 1.在生产者发送消息的时候，首先需要从我们的ringBuffer里面获取一个可用的序号
         long sequence = ringBuffer.next();
