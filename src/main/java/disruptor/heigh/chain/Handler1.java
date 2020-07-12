@@ -1,4 +1,4 @@
-package disruptor.heigh;
+package disruptor.heigh.chain;
 
 import com.lmax.disruptor.EventHandler;
 import com.lmax.disruptor.WorkHandler;

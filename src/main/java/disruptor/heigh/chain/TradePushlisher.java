@@ -1,4 +1,4 @@
-package disruptor.heigh;
+package disruptor.heigh.chain;
 
 import com.lmax.disruptor.EventTranslator;
 import com.lmax.disruptor.dsl.Disruptor;
@@ -27,7 +27,8 @@ public class TradePushlisher implements Runnable {
             // 新的提交任务的方式
             disruptor.publishEvent(eventTranslator);
         }
-
+        // 发起唤醒
+        latch.countDown();
     }
 }
 

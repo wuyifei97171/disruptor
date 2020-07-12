@@ -1,4 +1,4 @@
-package disruptor.heigh;
+package disruptor.heigh.chain;
 
 import java.util.concurrent.atomic.AtomicInteger;
 
